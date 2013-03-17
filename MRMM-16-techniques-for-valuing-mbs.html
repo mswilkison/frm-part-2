@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Market Risk Measurement and Management | Chapter 16 | Techniques for Valuing MBS</title>
+
+		<meta name="description" content="Financial Risk Manager Part 2 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Chapter 16</h1>
+					<h3>Techniques for Valuing MBS</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Static Cash Flow Yield Analysis</h2>
+					<ul>
+						<li>Must assume a certain prepayment rate</li>
+						<li>Bond equivalent yield (BEY) = 2[(1+i<sub>m</sub>/12)<sup>6</sup>-1]</li>
+						<li>Nominal spread - the difference between the cash flow yield and the Treasury yield</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Z-Spread</h2>
+					<p>A measure of the spread that an investor would realize over the Treasury spot rate curve if the mortgage security were held to maturity</p>
+				</section>
+
+				<section>
+					<h2>Monte Carlo Simulation</h2>
+					<p><em>Definition: A simulation generating a set of cash flows based on simulated future mortgage rates</em></p>
+					<ul>
+						<li>Steps:</li>
+						<ol>
+							<li>Simulate short-term interest rate and refinancing rate paths</li>
+							<li>Project the cash flow on each interest rate path</li>
+							<li>Determine the PV of the cash flows on each interest rate path</li>
+							<li>Compute the theoretical value of the mortgage security</li>
+						</ol>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Option-Adjusted Spread (OAS)</h2>
+					<p><em>Definition: The spread (K) that, when added to all the spot rates of all interest rate paths, makes the average PV of the paths equal to the observed market price</em></p>
+					<ul>
+						<li>Accounts for the option of borrowers to prepay</li>
+						<li>Option cost = Zero-volatility OAS - OAS</li>
+					</ul>
+					<aside class="notes">
+						The zero-volatility OAS is calculated in the same was as the OAS but only the base-case interest rate path is considered.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Total Return Analysis</h2>
+					<ul>
+						<li>Enables investors to evaluate returns over different horizons and interest rate scenarios</li>
+						<li>Total return = Total horizon proceeds/Total cost) - 1</li>
+						<uL>
+							<li>If there are interim cash flows, these should be accounted for as well</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Market Risk Measurement and Management | Chapter 15 | Overview of the Mortgage-Backed Securities Market</title>
+
+		<meta name="description" content="Financial Risk Manager Part 2 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Chapter 15</h1>
+					<h3>Overview of the Mortgage-Backed Securities Market</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Creating Different Types of MBS</h2>
+					<ul>
+						<li>Pool - aggregation of a large number of mortgage loans with similar characteristics</li>
+						<li>Securitized as agency or non-agency/private label transactions</li>
+						<ul>
+							<li>Pass-throughs</li>
+							<li>Collateralized mortgage obligations (CMOs)/structured securities</li>
+							<li>Mortgage strips - Principal-only (PO), Interest-only (IO)</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						In pass-throughs, interest and principal is paid to investors based on their pro rata share of the pool. In structured securities, the underlying cash flows are divided into tranches with varying average lives and durations, seniority, prepayment exposure, and credit risk.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Agency MBS Creation</h2>
+					<ul>
+						<li>Fixed rate agency pooling</li>
+						<ul>
+							<li>Guaranty fees - paid to the agency to insure the loan</li>
+							<li>Required/base servicing - portion of the rate held by the servicer</li>
+							<li>Excess servicing - remainder in excess of coupon after deducting g-fees and base servicing</li>
+						</ul>
+						<li>Adjustable rate agency pooling</li>
+						<ul>
+							<li>Trade on a pool-specific basis, rather than by specific coupons</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Private Label Securitization</h2>
+					<ul>
+						<li>Conceptually similar to agency pooling but utilizing alternative forms of credit enhancement</li>
+						<ul>
+							<li>Subordination</li>
+							<li>Shifting interest</li>
+							<li>Overcollateralization</li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						Tranches with varying degress of seniority are created, with subordinate ones absorbing initial losses. Shifting interest is a technique that directs initial prepayments towards senior tranches before eventually directing prepayemnts on a pro rata basis. Overcollateralization refers to a structure in which there is more loan collateral than bonds.
+					</aside>
+				</section>
+
+				<section>
+					<h2>MBS Trading</h2>
+					<ul>
+						<li>Specified pool trade</li>
+						<li>To-be-announced (TBA) trade</li>
+						<li>Stipulated trade</li>
+						<li>Dollar roll</li>
+					</ul>
+					<aside class="notes">
+						In a specified pool trade, the pool number and original balance of the pool are identified at the tiem of the transaction. In a TBA trade, the security is identified and a price is set but the pool identities are not provided until settlement. A stipulated trade is a variation of a TBA trade with more precise specifications. A dollar roll is a transaction in which a dealer simultaneously buys positions in one settlement month and sells the identical position in a another month.
+					</aside>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
