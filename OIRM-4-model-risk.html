@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Operational and Integrated Risk Management | Chapter 4 | Model Risk</title>
+
+		<meta name="description" content="Financial Risk Manager Part 2 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Chapter 4</h1>
+					<h3>Model Risk</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<p><em>Definition: The risk of error in our estimated risk measures due to inadequacies in our risk models</em></p>
+					<ul>
+						<li>Fundamental models - formal systems tying outputs to inputs based on various assumptions</li>
+						<li>Descriptive models - more intuitive, yet superficial shortcuts to fundamental models</li>
+						<li>Statistical models - attempt to capture the relationship between variables using a statistical best fit</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Sources of Risk</h2>
+					<ul>
+						<li>Incorrect model specification</li>
+						<li>Incorrect model application</li>
+						<li>Implementation risk</li>
+						<li>Incorrect calibration</li>
+						<li>Programming problems</li>
+						<li>Data problems</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Managing Model Risk</h2>
+					<ul>
+						<li>Be aware of model risk</li>
+						<li>Identify, evaluate, and check key assumptions</li>
+						<li>Test models against known parameters</li>
+						<li>Select the simplest reasonable model</li>
+						<li>Backtest and stress test the model</li>
+						<li>Estimate model risk quantitatively</li>
+						<li>Don't ignore small problems</li>
+						<li>Plot results and use non-parametric statistics</li>
+						<li>Re-evaluate models periodically</li>
+						<li>Establish an independent risk oversight (IRO) unit</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

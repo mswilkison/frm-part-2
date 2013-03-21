@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Credit Risk Measurement and Management | Chapter 7 | Credit and Counterparty Risk</title>
+
+		<meta name="description" content="Financial Risk Manager Part 2 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Chapter 7</h1>
+					<h3>Credit and Counterparty Risk</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Credit Risk</h2>
+					<p><em>Definition: The risk of economic loss from default or changes in ratings or other credit events</em></p>
+				</section>
+
+				<section>
+					<h2>Basic Principles</h2>
+					<ul>
+						<li>A firms assets are financed by a combination of debt and equity capital of varying seniority and structures</li>
+						<li>Obligations can be secured or unsecured, recourse or non-recourse, and of varying priority</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Frictions and Transaction Costs</h2>
+					<ul>
+						<li>Asymmetric information</li>
+						<li>Principal-agent problems</li>
+						<li>Risk shifting</li>
+						<li>Moral hazard</li>
+						<li>Adverse selection</li>
+						<li>Externalities</li>
+						<li>Collective action problems/coordination failures</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Default and Recovery: Analytic Concepts</h2>
+					<ul>
+						<li>Default - failure to pay on a financial obligation</li>
+						<li>Bankruptcy - legal procedure in which an entity seeks temporary relief from its creditors</li>
+						<li>Probability of default</li>
+						<li>Exposure at default (EAD) - amount of money lender can potentially lose in a default</li>
+						<li>Loss given default (LGD) = EAD - Recovery amount</li>
+						<li>Expected loss (EL) = Probability of default × LGD
+					</ul>
+				</section>
+
+				<section>
+					<h2>Assessing Creditworthiness</h2>
+					<ul>
+						<li>Credit rating - an alphanumeric grade summarizing the creditworthiness of a security or corporate entity</li>
+						<li>Transition matrices - show estimated likelihood of a company with a given starting rating ending a period with a different rating</li>
+						<li>Internal ratings</li>
+						<li>Credit risk models</li>
+						<ul>
+							<li>Reduced-form models - take default probability and LGD as inputs</li>
+							<li>Structural models - derive measures of credit risk from fundamental data</li>
+							<li>Factor models</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Counterparty Risk</h2>
+					<p><em>Definition: A special form of credit risk that arises whenever an investor requires another party to fulfill a contractual obligation and vice-versa</em></p>
+					<ul>
+						<li>Netting - having one of the parties to a contract pay only the net amount, rather than exchaning principals</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>The Merton Model</h2>
+					<ul>
+						<li>Assumptions:</li>
+						<ul>
+							<li>Value of assets follow geometric Brownian motion</li>
+							<li>Simple balance sheet</li>
+							<li>Limited liability/non-recourse</li>
+							<li>Strictly enforced contracts/no renegotiation</li>
+							<li>Assets of the firm are tradable</li>
+							<li>Default only possible at maturity</li>
+							<li>No interim cash flows</li>
+						</ul>
+						<li>Default occurs if the value of the firm's assets are less than its debt repayment obligations</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Credit Factor Models</h2>
+					<p>Relate the risk of credit loss to fundamental economic variables</p>
+				</section>
+
+				<section>
+					<h2>Credit Risk Measures</h2>
+					<ul>
+						<li>Credit losses have three components:</li>
+						<ol>
+							<li>Expected loss (EL)</li>
+							<li>Unexpected loss (UL) - a quantile of the credit loss in excess of the expected loss</li>
+							<li>Tail loss - losses beyond the UL</li>
+						</ol>
+						<li>Jump-to-default risk - an estimate of the loss that would be realized if a position were to default instantly</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

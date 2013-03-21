@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Operational and Integrated Risk Management | Chapter 2 | Range of Practices and Issues in Economic Capital Frameworks</title>
+
+		<meta name="description" content="Financial Risk Manager Part 2 Study Materials">
+		<meta name="author" content="MacLane Wilkison">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Chapter 2</h1>
+					<h3>Range of Practices and Issues in Economic Capital Frameworks</h3>
+					<p>
+						<small>Created for <a href="http://alchemistsacademy.com">Alchemists Academy</a> by <a href="http://alchemistsacademy.com/about">MacLane Wilkison</a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Economic Capital and Governance</h2>
+						<ul>
+							<li>Economic capital is not only used for relative risk measurement and performance but also to determine the adequancy of an institution's absolute level of capital</li>
+							<li>Senior management "buy-in" is key</li>
+							<li>Models should be transparent and fully understood</li>
+							<li>Economic capital measures should capture all implicit and explicit risks</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Uses</h2>
+						<ul>
+							<li>Business-level use</li>
+							<ul>
+								<li>Credit portfolio management</li>
+								<li>Risk-based pricing</li>
+								<li>Customer and product profitability analysis</li>
+								<li>Customer segmentation and portfolio optimization</li>
+								<li>Management incentives</li>
+							</ul>
+							<li>Enterprise-wide or group-level use</li>	
+							<ul>
+								<li>Relative performance measurement</li>
+								<li>Capital budgeting, strategic planning, target setting, and internal reporting</li>
+								<li>Acquisition/divestiture analysis</li>
+								<li>External communication</li>
+								<li>Capital adequacy assessment</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Risk Measures</h2>
+						<ul>
+							<li>Choice of risk measure depends on:</li>
+							<ul>
+								<li>Properties of the measure</li>
+								<li>The risk- or product-type being measured</li>
+								<li>Data availability</li>
+								<li>Complexity and usability trade-offs</li>
+								<li>Intended use of the measure</li>
+							</ul>
+							<li>Important to fully understand advantages and limitations of a chosen measure</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Desirable Characteristics of a Measure</h2>
+						<ol>
+							<li>Intuitive</li>
+							<li>Stable</li>
+							<li>Easy to compute</li>
+							<li>Easy to understand</li>
+							<li>Coherent</li>
+							<li>Simple and meaningful risk decompositions</li>
+						</ol>
+						<aside class="notes">
+							1. Should meaningfully align with some intuitive notion of risk; 2. small changes in model parameters should not produce large changes in the estimated loss distribution; 3. Should be as easy as possible; 4. Should be easily understood by senior management; 5. Should be coherent and satisfy conditions of monoticity, positive homogeneity, translation invariance, and subadditivity.
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Risk Aggregation Methodologies</h2>
+					<ul>
+						<li>Simple summation</li>
+						<li>Constant diversification</li>
+						<li>Variance-covariance matrix</li>
+						<li>Copulas</li>
+						<li>Full modelling/simulation</li>
+					</ul>
+					<aside class="notes">
+						Summation simply adds together the individual capital components. Constant diversification subtracts a fixed percentage from the overall figure. The variance-covariance method yields a weighted sum of components on the basis of bilateral correlation between risks. The copulas method combines marginal distributions through copula functions. The full modelling approach simulates the impact of common risk drivers on all risk components and constructs the joint distribution of losses.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Validation</h2>
+					<p>Provides a degree of confidence that assumptions are appropriate and is useful in identifying limitations of models</p>
+				</section>
+
+				<section>
+					<h2>Recommendations for Supervisors</h2>
+					<ol>
+						<li>Use economic capital models in assessing capital adequacy</li>
+						<li>Ensure committment of senior management</li>
+						<li>Transparency and integration into decision making</li>
+						<li>Robust risk identification process</li>
+						<li>Understand implications of selected risk measures</li>
+						<li>Ensure risk aggregation is representative of risk profile</li>
+						<li>Rigorous and comprehensive validation of models</li>
+						<li>Carefully assess dependency modellingin credit risk</li>
+						<li>Account for counterparty credit risk</li>
+						<li>Carefully consider interest rate risk in the banking book</li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3><a href="http://alchemistsacademy.com">AlchemistsAcademy.com</a></h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
